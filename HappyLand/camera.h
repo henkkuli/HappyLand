@@ -6,7 +6,7 @@
 class camera;
 
 #include <math/vec.h>
-#include <math/mat4.h>
+#include <math/mat.h>
 
 template<class T>
 class cameraRenderManager;

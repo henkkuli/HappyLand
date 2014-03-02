@@ -3,7 +3,8 @@
 class entity;
 
 #include <math/vec.h>
-#include <math/mat4.h>
+#include <math/mat.h>
+#include <math/versor.h>
 #include <buffers.h>
 
 class game;
@@ -36,8 +37,15 @@ public:
 	virtual void update(double delta);
 
 private:
+	void updateBoneMatrices();
+
 	model model;
 	math::mat4 boneMatrices[ENTITY_MAX_BONES];
+	math::mat4 nodeMatrices[ENTITY_MAX_BONES];
+	struct boneStatus {
+		math::vec3 scale;
+		math::versor versor;
+	} boneStatuses[ENTITY_MAX_BONES];
 
 	friend class entityRenderManager;
 };

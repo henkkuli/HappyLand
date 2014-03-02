@@ -12,11 +12,10 @@ out vec4 fragColor;
 vec3 lightPos = vec3(0, 0, 2);
 vec3 La = vec3(1,1,1);
 vec3 Ld = vec3(1,1,1);
-vec3 Ls = vec3(0.5, 0.2, 0.2);
+vec3 Ls = vec3(1,1,1);
 
 // Surface properties
 vec3 Ka = vec3(.1, .1, .1);
-vec3 Ks = vec3(1, 1, 1);
 
 void main() {
 	vec3 diffuceColor = texture2D(diffuseMap, st).rgb;

@@ -14,12 +14,12 @@ game::~game() {
 
 void game::init() {
 	modelLoader mloader("models");
-	model monkey = mloader.load("out.dat", "monkey_diffuse2.png");
+	model monkey = mloader.load("model.dat", "model_diffuce.png", "model_specular.png");
 	//model test = mloader.load("out.dat", "monkey_diffuse2.png");
 	//entityManager.add(new modelEntity(*this, test, math::vec3(0, -2, 0)));
 	entityManager.add(new modelEntity(*this, monkey, math::vec3()));
-	for (int i = -100; i <= 100; i++)
-		entityManager.add(new modelEntity(*this, monkey, math::vec3(3.0f * i, 0, 0)));
+	//for (int i = -10; i <= 10; i++)
+	//	entityManager.add(new modelEntity(*this, monkey, math::vec3(3.0f * i, 0, 0)));
 }
 
 void game::run() {

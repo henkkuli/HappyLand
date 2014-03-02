@@ -41,9 +41,9 @@
 #
 # image files are treated as binary by default.
 ###############################################################################
-#*.jpg   binary
-#*.png   binary
-#*.gif   binary
+*.jpg   binary
+*.png   binary
+*.gif   binary
 
 ###############################################################################
 # diff behavior for common document formats
@@ -62,3 +62,9 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# behavior for model files (both .dat and .blend)
+###############################################################################
+*.dat   binary
+*.blend binary

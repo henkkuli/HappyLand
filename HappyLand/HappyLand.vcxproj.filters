@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\shaders">
+      <UniqueIdentifier>{eef91ea2-23bd-4673-81c9-40a039497893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\models">
+      <UniqueIdentifier>{cd7c99a4-bba6-4412-b6fd-77a2c0c056a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\models\textures">
+      <UniqueIdentifier>{20c74af5-18ca-4ff6-a267-423b6c412c45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\networking">
+      <UniqueIdentifier>{c4f96b61-686b-43bb-89fa-8e953e963f46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\networking">
+      <UniqueIdentifier>{6369eb85-98bd-46d1-bb88-3323680cee1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="renderManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="viewport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="networking\socket.cpp">
+      <Filter>Source Files\networking</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="renderManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="viewport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="networking\socket.h">
+      <Filter>Header Files\networking</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\entity_fs.glsl">
+      <Filter>Resource Files\shaders</Filter>
+    </None>
+    <None Include="shaders\entity_vs.glsl">
+      <Filter>Resource Files\shaders</Filter>
+    </None>
+    <None Include="models\cube.dat">
+      <Filter>Resource Files\models</Filter>
+    </None>
+    <None Include="models\exporter.py">
+      <Filter>Resource Files\models</Filter>
+    </None>
+    <None Include="models\model.dat">
+      <Filter>Resource Files\models</Filter>
+    </None>
+    <None Include="models\monkey.dat">
+      <Filter>Resource Files\models</Filter>
+    </None>
+    <None Include="models\out.dat">
+      <Filter>Resource Files\models</Filter>
+    </None>
+    <None Include="models\plane.dat">
+      <Filter>Resource Files\models</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="models\textures\monkey_diffuse.png">
+      <Filter>Resource Files\models\textures</Filter>
+    </Image>
+    <Image Include="models\textures\monkey_diffuse2.png">
+      <Filter>Resource Files\models\textures</Filter>
+    </Image>
+    <Image Include="models\textures\texture.bmp">
+      <Filter>Resource Files\models\textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
