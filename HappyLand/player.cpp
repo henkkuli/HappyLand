@@ -35,17 +35,17 @@ void playerManager::update(double delta) {
 		player.position += math::vec3(cosf(player.horizontalRotation) * deltaf * player.speed, 0, -sinf(player.horizontalRotation) * deltaf * player.speed);
 	}
 	if (game.isKeyPressed(GLFW_KEY_LEFT_SHIFT)) {
-		player.position.y() += deltaf * player.speed;
+		player.position.y += deltaf * player.speed;
 	}
 	if (game.isKeyPressed(GLFW_KEY_LEFT_CONTROL)) {
-		player.position.y() -= deltaf * player.speed;
+		player.position.y -= deltaf * player.speed;
 	}
 
 	// Mouse
 	vec2 mouseDelta = game.getMouseDelta() * 0.001f;
-	player.horizontalRotation -= mouseDelta.x();
-	player.verticalRotation -= mouseDelta.y();
-	player.speed += game.getMouseScrollDelta().y();
+	player.horizontalRotation -= mouseDelta.x;
+	player.verticalRotation -= mouseDelta.y;
+	player.speed += game.getMouseScrollDelta().y;
 
 	// Restrict player head position
 	if (player.verticalRotation < PLAYER_HEAD_MIN) player.verticalRotation = PLAYER_HEAD_MIN;
