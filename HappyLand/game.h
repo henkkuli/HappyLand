@@ -39,5 +39,6 @@ private:
 	entityManager entityManager;
 	entityRenderManager entityRenderManager;
 	playerManager playerManager;
+	float gravity;
 };
 

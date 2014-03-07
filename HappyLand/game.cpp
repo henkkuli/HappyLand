@@ -20,6 +20,8 @@ void game::init() {
 	entityManager.add(new modelEntity(*this, monkey, math::vec3()));
 	//for (int i = -10; i <= 10; i++)
 	//	entityManager.add(new modelEntity(*this, monkey, math::vec3(3.0f * i, 0, 0)));
+
+	gravity = -9.81f;
 }
 
 void game::run() {
