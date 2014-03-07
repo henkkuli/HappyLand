@@ -31,7 +31,7 @@ void modelEntity::updateBoneMatrices() {
 		mat4 &nodeMat = boneMatrices[i];
 		bone &node = bones[i];
 
-		mat4 boneMat = mat4(status.versor.getMatrix());
+		mat4 boneMat = mat4(status.versor.getMatrix()) * mat4::scale(status.scale);
 		if (node.parentIndex == (unsigned short)-1) {			// The root
 			nodeMat = boneMat;
 			continue;
